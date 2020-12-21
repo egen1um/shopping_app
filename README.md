@@ -12,8 +12,8 @@
 3. Browse to `localhost:80` to use demo frontend
 
 ## Data types:
-* Product: `{id: <int>, name: <string>, description: <string>, price: <float>, products: [<Product>...]}`
-* Order: `{id: <int>, status: <int>, price: <Price>`
+* Product: `{id: <int>, name: <string>, description: <string>, price: <float>}`
+* Order: `{id: <int>, status: <int>, products: [<Product>...], price: <Price>`
 * Price: `{totalPrice: <float>, discount: <float>, calculatedPrice: <float>}`
 
 ## API reference
