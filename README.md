@@ -12,9 +12,9 @@
 3. Browse to `localhost:80` to use demo frontend
 
 ## Data types:
-* ### Product: `{id: <int>, name: <string>, description: <string>, price: <float>, products: [<Product>...]}`
-* ### Order: `{id: <int>, status: <int>, price: <Price>`
-* ### Price: `{totalPrice: <float>, discount: <float>, calculatedPrice: <float>}`
+* Product: `{id: <int>, name: <string>, description: <string>, price: <float>, products: [<Product>...]}`
+* Order: `{id: <int>, status: <int>, price: <Price>`
+* Price: `{totalPrice: <float>, discount: <float>, calculatedPrice: <float>}`
 
 ## API reference
 
