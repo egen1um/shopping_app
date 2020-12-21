@@ -11,7 +11,7 @@ class Content extends React.Component {
         super(props);
 
         this.state = {
-            displayPage: "OrdersView",
+            displayPage: "ProductsView",
             products: [],
             error: null
         };
