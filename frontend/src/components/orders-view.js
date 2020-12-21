@@ -125,8 +125,9 @@ class OrdersView extends React.Component {
             } else
                 orderId = this.state.currentOrder.id;
 
-            await this.props.client.addProductToOrder(productId, orderId);
-            this.refreshCurrentOrder(orderId);
+            const res = await this.props.client.addProductToOrder(productId, orderId);
+            if (!res.error)
+                this.refreshCurrentOrder(orderId);
         })();
     }
 
