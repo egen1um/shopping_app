@@ -1,0 +1,16 @@
+INSERT INTO "products" (name,description,price) VALUES ('Palmer Hyde','Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a,','60.56');
+INSERT INTO "products" (name,description,price) VALUES ('Phelan Kline','Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a,','45.78');
+INSERT INTO "products" (name,description,price) VALUES ('Mara Hunt','Quisque ornare tortor at risus. Nunc ac sem ut dolor','81.60');
+INSERT INTO "products" (name,description,price) VALUES ('Galvin Whitney','Integer urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla','58.04');
+INSERT INTO "products" (name,description,price) VALUES ('Benjamin Farmer','eget ipsum. Suspendisse sagittis. Nullam vitae diam. Proin dolor. Nulla','81.31');
+INSERT INTO "products" (name,description,price) VALUES ('Wallace Davidson','litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut','64.45');
+INSERT INTO "products" (name,description,price) VALUES ('Unity Roy','mi. Aliquam gravida mauris ut mi. Duis risus odio, auctor','8.00');
+INSERT INTO "products" (name,description,price) VALUES ('Claire Delacruz','arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida','20.97');
+INSERT INTO "products" (name,description,price) VALUES ('Emery Carney','consectetuer euismod est arcu ac orci. Ut semper pretium neque.','0.81');
+INSERT INTO "products" (name,description,price) VALUES ('Cherokee Walter','Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra.','65.93');
+INSERT INTO "products" (name,description,price) VALUES ('Violet Houston','eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed','61.84');
+INSERT INTO "products" (name,description,price) VALUES ('Jeanette Maynard','tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris.','9.77');
+INSERT INTO "products" (name,description,price) VALUES ('Herman Greene','Nam interdum enim non nisi. Aenean eget metus. In nec','24.04');
+INSERT INTO "products" (name,description,price) VALUES ('Quamar Flowers','ornare. Fusce mollis. Duis sit amet diam eu dolor egestas','62.17');
+INSERT INTO "products" (name,description,price) VALUES ('Leonard Bowman','sed leo. Cras vehicula aliquet libero. Integer in magna. Phasellus','51.40');
+INSERT INTO "products" (name,description,price) VALUES ('Hedy Wyatt','tortor at risus. Nunc ac sem ut dolor dapibus gravida.','88.18');

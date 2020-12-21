@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:13.1-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: shopping_app
+      POSTGRES_PASSWORD: pwd
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./schema/shopping-app-init.sql:/docker-entrypoint-initdb.d/shopping-app-init.sql
+
+  pgadmin:
+    image: dpage/pgadmin4
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+    restart: unless-stopped
+    
+  backend:
+    build: 
+        context: .
+        dockerfile: rs-test/Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    restart: always

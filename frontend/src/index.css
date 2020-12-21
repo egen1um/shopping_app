@@ -1,0 +1,57 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+.name {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content;
+}
+
+.product-view {
+    border: black solid 1px;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.new-product-view {
+    border: black solid 1px;
+    margin: 10px;
+}
+
+.new-product-view * {
+    margin: 5px;
+}
+
+input[type=text], textarea {
+    display: block;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-item {
+    display: flex;
+    margin-left: 5px;
+}
+
+.description {
+    font-style: italic;
+}
+
+.error-msg {
+    color: red;
+    margin-left: 10px;
+    margin-right: auto;
+}
