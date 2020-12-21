@@ -19,42 +19,42 @@
 ## API reference
 
 
-*  __*get* `/products` - get all products__
+*  __*get* `/products` - get all products__\
     input: none\
     output: `{products: [<Product>...]}`  
   
-* __*post* `/product` - create new product__
+* __*post* `/product` - create new product__\
     input: `<Product>`(without **id**)\
     output: `{productId: <int>}`
   
-* __*delete* `/product/:id` - remove product by id__
+* __*delete* `/product/:id` - remove product by id__\
     input: `:id`\
     output: none
   
-* __*get* `/orders` - get all orders__
+* __*get* `/orders` - get all orders__\
     input: none\
     output: `{orders: [<Order>...]}` (without **products**) 
   
-* __*post* `/order` - create new order__
+* __*post* `/order` - create new order__\
     input: none\
     output: `{orderId: <int>}`
   
-* __*delete* `/order/:id` - delete order by id__
+* __*delete* `/order/:id` - delete order by id__\
     input: `:id`\
     output: none
   
-* __*put* `/order/:orderId/status/:status` - set order status (0 - being created, 1 - placed)__
+* __*put* `/order/:orderId/status/:status` - set order status (0 - being created, 1 - placed)__\
     input: `:orderId`, `:status`\
     output: none
   
-* __*put* `/order/:id` - get order by id with products__
+* __*put* `/order/:id` - get order by id with products__\
     input: `:id`\
     output: `<Order>`
   
-* __*put* `/order/:orderId/:productId` - add product to order__
+* __*put* `/order/:orderId/:productId` - add product to order__\
     input: `:orderId`, `:productId`\
     output: `{productToOrderId: <int>}`
   
-* __*delete* `/order/product/:productToOrderId` - removes product from order__
+* __*delete* `/order/product/:productToOrderId` - removes product from order__\
     input: `:productToOrderId`\
     output: none
