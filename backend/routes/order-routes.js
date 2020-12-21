@@ -131,7 +131,7 @@ router.put('/order/:orderId/:productId', (req, res) => {
     (async () => {
         const status = await getOrderStatus(req.params.orderId);
         if (status !== 0)
-            throw {error: `Order ${req.params.orderId} already placed. You can't modify it.`};
+            throw {error: `Order ${req.params.orderId} is already placed. You can't modify it.`};
 
         const result = await pool.query('INSERT INTO products_to_orders (product_id, order_id) VALUES ($1, $2) RETURNING id', [req.params.productId, req.params.orderId]);
         const productToOrderId = result.rows[0].id;
@@ -158,7 +158,7 @@ router.delete('/order/product/:productToOrderId', (req, res) => {
 
         const status = await getOrderStatus(orderId);
         if (status !== 0)
-            throw {error: `Order ${req.params.orderId} already placed. You can't modify it.`};
+            throw {error: `Order ${orderId} is already placed. You can't modify it.`};
 
         await pool.query('DELETE FROM products_to_orders WHERE id=$1;', [req.params.productToOrderId]);
 

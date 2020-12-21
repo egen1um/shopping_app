@@ -61,8 +61,9 @@ class CurrentOrderView extends React.Component {
 
     onDeleteProductFromOrderClick(id) {
         (async () => {
-            await this.props.client.deleteProductFromOrder(id);
-            this.props.refreshCurrentOrder(this.props.order.id);
+            const response = await this.props.client.deleteProductFromOrder(id);
+            if (!response.error)
+                this.props.refreshCurrentOrder(this.props.order.id);
         })();
     }
 

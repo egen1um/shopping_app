@@ -30,8 +30,9 @@ class NewProductView extends React.Component {
     onFormSubmit(event) {
         event.preventDefault();
         (async () => {
-            await this.props.client.createProduct(this.state.name, this.state.description, this.state.price);
-            this.props.onProductCreated();
+            const res = await this.props.client.createProduct(this.state.name, this.state.description, this.state.price);
+            if (!res.error)
+                this.props.onProductCreated();
         })();
     }
 
