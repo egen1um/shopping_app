@@ -12,6 +12,7 @@
 * *If localhost ports 3000 and 5432 are unavailable, edit ports in `docker-compose.yml`*
 2. Run `docker-compose up` command in this *local folder*
 3. Browse to `localhost:3000` to use demo frontend
+4. To start tests run `npm test` in backend container.
 
 ## Data types:
 * Product: `{id: <int>, name: <string>, description: <string>, price: <float>}`
