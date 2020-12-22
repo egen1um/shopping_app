@@ -1,8 +1,6 @@
 class ShoppingAppClient {
 
-    constructor(host, port, onError = response => console.log(response)) {
-        this.host = host;
-        this.port = port;
+    constructor(onError = response => console.log(response)) {
         this.onError = onError
     }
 
@@ -18,10 +16,7 @@ class ShoppingAppClient {
         if (json != null)
             fetchParams.body = JSON.stringify(json);
 
-        // let url = `${this.host}:${this.port}${endpoint}`;
-        const url = endpoint;
-
-        let result = await fetch(url, fetchParams);
+        let result = await fetch(endpoint, fetchParams);
 
         result = await result.text();
 
@@ -54,7 +49,7 @@ class ShoppingAppClient {
     }
 
     async getOrders() {
-        return await this.sendRequest("get", "/products", null);
+        return await this.sendRequest("get", "/orders", null);
     }
 
     async addProductToOrder(productId, orderId) {

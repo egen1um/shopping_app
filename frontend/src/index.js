@@ -19,7 +19,7 @@ class Content extends React.Component {
         this.refreshProductList = this.refreshProductList.bind(this);
         this.displayErrorMsg = this.displayErrorMsg.bind(this);
 
-        this.shoppingAppClient = new ShoppingAppClient("localhost", "80", this.displayErrorMsg);
+        this.shoppingAppClient = new ShoppingAppClient(this.displayErrorMsg);
 
         (async () => {
             const res = await this.shoppingAppClient.getProducts();
@@ -63,15 +63,6 @@ class Content extends React.Component {
         );
     }
 }
-
-//
-// (async () => {
-//     const res = await this.shoppingAppClient.getProducts();
-//     ReactDOM.render(
-//         <Content products={res.products}/>,
-//         document.getElementById('root')
-//     );
-// })();
 
 ReactDOM.render(
     <Content/>,
