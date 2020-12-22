@@ -9,9 +9,9 @@
 ## Instructions
 1. Download project to *local folder*
 * *Install Docker*
-* *If localhost ports 80 and 5432 are unavailable, edit ports in `docker-compose.yml`*
+* *If localhost ports 3000 and 5432 are unavailable, edit ports in `docker-compose.yml`*
 2. Run `docker-compose up` command in this *local folder*
-3. Browse to `localhost:80` to use demo frontend
+3. Browse to `localhost:3000` to use demo frontend
 
 ## Data types:
 * Product: `{id: <int>, name: <string>, description: <string>, price: <float>}`
