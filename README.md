@@ -50,7 +50,7 @@
     input: `:orderId`, `:status`\
     output: none
   
-* __*put* `/order/:id` - get order by id with products__\
+* __*get* `/order/:id` - get order by id with products__\
     input: `:id`\
     output: `<Order>`
   
