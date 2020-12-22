@@ -15,5 +15,4 @@ RUN npm install
 # Bundle app source
 COPY ./backend .
 
-EXPOSE 80
 CMD [ "node", "app-server.js" ]
